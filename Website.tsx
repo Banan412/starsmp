@@ -1,26 +1,10 @@
-// Get Started: https://www.framer.com/developers
+import { CreditsPage } from "./src/pages/CreditsPage"
+import { HomePage } from "./src/pages/HomePage"
+import { ServerInfoPage } from "./src/pages/ServerInfoPage"
 
-// @ts-ignore - framer-motion is expected to be installed in the standalone Vite app
-import { motion } from "framer-motion"
-
-/**
- * @framerSupportedLayoutWidth auto
- * @framerSupportedLayoutHeight auto
- */
-export default function Website(props) {
-    const { tint = "rgba(150,150,150,0.15)" } = props
-
-    return (
-        <motion.div
-            style={{
-                margin: 50,
-                width: 100,
-                height: 100,
-                borderRadius: 5,
-                backgroundColor: tint,
-            }}
-            animate={{ scale: 1.5 }}
-            whileHover={{ rotate: 90 }}
-        />
-    )
+export default function Website() {
+  const path = window.location.pathname.replace(/\/$/, "") || "/"
+  if (path === "/server-info") return <ServerInfoPage />
+  if (path === "/credits") return <CreditsPage />
+  return <HomePage />
 }
