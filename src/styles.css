@@ -19,6 +19,7 @@ main { width: 100%; flex: 1; }
 .hero-copy { max-width: 760px; margin: 0; color: #c9c0d9; font-size: clamp(20px, 2.5vw, 22px); font-weight: 500; line-height: 1.3; }
 .eyebrow, .card-kicker { margin: 0; color: #c77dff; font-size: 15px; font-weight: 700; letter-spacing: 1.6px; line-height: 1; }
 .centered { text-align: center; }
+.server-addresses { width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .server-address { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 16px 18px; border: 1px solid #4c356c; border-radius: 6px; background: #1b132b; }
 .address-label { display: flex; align-items: center; gap: 10px; color: #9d90b2; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
 .address-label svg { width: 20px; height: 20px; color: #c77dff; }
@@ -37,7 +38,9 @@ main { width: 100%; flex: 1; }
 .path-card > p:last-child { margin: 0; color: #c9c0d9; font-size: 18px; font-weight: 500; line-height: 1.35; }
 .join { display: flex; flex-direction: column; align-items: center; gap: 22px; padding-top: 88px; padding-bottom: 88px; text-align: center; background: radial-gradient(50% 50% at 50% 50%, #2b174b 0%, #100b1c 68%); }
 .join h2 { font-size: clamp(36px, 5vw, 46px); line-height: 1; }
-.join-ip { margin: 0; color: #fff; font-size: 27px; font-weight: 700; letter-spacing: 1px; }
+.join-ips { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; }
+.join-ips p { display: flex; gap: 10px; margin: 0; color: #fff; font-size: 23px; font-weight: 700; letter-spacing: 1px; }
+.join-ips span { color: #c77dff; font-family: "Rajdhani", system-ui, sans-serif; font-size: 15px; letter-spacing: 1.6px; }
 .content-page { min-height: calc(100vh - 74px); padding-top: clamp(72px, 9vw, 96px); padding-bottom: clamp(72px, 9vw, 96px); }
 .content-page h1 { font-size: clamp(40px, 6vw, 58px); line-height: 1; }
 .content-page .lead { max-width: 900px; margin: 0; color: #c9c0d9; font-size: clamp(20px, 2.5vw, 22px); font-weight: 500; line-height: 1.4; }
@@ -61,9 +64,11 @@ main { width: 100%; flex: 1; }
   .page-links { font-size: 16px; }
   .hero, .overview, .ways, .join, .content-page { padding-top: 56px; padding-bottom: 56px; }
   .hero { gap: 22px; }
+  .server-addresses { grid-template-columns: 1fr; }
   .server-address { align-items: flex-start; flex-direction: column; }
   .server-address strong { font-size: 21px; }
   .path-list, .credits-grid { grid-template-columns: 1fr; }
-  .join-ip { font-size: 23px; }
+  .join-ips { align-items: center; flex-direction: column; }
+  .join-ips p { font-size: 20px; }
   .site-footer { align-items: flex-start; flex-direction: column; gap: 14px; }
 }

@@ -12,7 +12,10 @@ export function HomePage() {
         <p className="eyebrow centered">✦&nbsp; JAVA SURVIVAL SERVER &nbsp;✦</p>
         <h1>STAR SMP</h1>
         <p className="hero-copy">A friendly survival world for builders, explorers, and every late-night adventure.</p>
-        <div className="server-address"><div className="address-label"><ServerIcon /><span>SERVER IP</span></div><strong>151.240.30.24:25506</strong></div>
+        <div className="server-addresses">
+          <div className="server-address"><div className="address-label"><ServerIcon /><span>JAVA</span></div><strong>151.240.30.8:25597</strong></div>
+          <div className="server-address"><div className="address-label"><ServerIcon /><span>BEDROCK</span></div><strong>151.240.30.2:25519</strong></div>
+        </div>
         <DiscordButton label="JOIN THE DISCORD" />
       </section>
       <section className="overview section-narrow">
@@ -32,7 +35,7 @@ export function HomePage() {
       <section className="join section-narrow">
         <p className="eyebrow centered">YOUR NEXT SESSION STARTS HERE</p>
         <h2>Join the Star SMP.</h2>
-        <p className="join-ip">151.240.30.24:25506</p>
+        <div className="join-ips"><p><span>JAVA</span>151.240.30.8:25597</p><p><span>BEDROCK</span>151.240.30.2:25519</p></div>
         <DiscordButton label="JOIN THE DISCORD" />
       </section>
     </Layout>
