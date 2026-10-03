@@ -1,6 +1,6 @@
 import { Layout } from "../components/Layout"
 
-const credits = [["DEVELOPERS", "Envo & Banana"], ["HOST", "CraftServ"], ["STAFF", "Envo, Rexortal, Apple"]]
+const credits = [["DEVELOPERS", "✦ Envo & Banana ✦"], ["HOST", "CraftServ"], ["STAFF", "✦ Envo, Rexortal, Apple, hugometa, Jay, Xyvoro and rhyce! ✦"]]
 
 export function CreditsPage() {
   return (
